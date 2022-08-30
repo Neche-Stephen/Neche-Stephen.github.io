@@ -1,0 +1,27 @@
+header .container-fluid{
+    background-color: #07294D !important;
+    
+}
+
+header .container-fluid img{
+    width: 100px;
+    height: 100px;
+}
+
+header .container-fluid p{
+    color: white;
+}
+
+/* CARDS */
+
+.cards{
+    color: white;
+}
+.gowen{
+    background-color: #C50227;
+}
+
+.science, .art{
+    background-color:  #78091E;
+}
+
