@@ -1,5 +1,5 @@
 header .container-fluid{
-    background-color: #07294D !important;
+    /* background-color: #07294D !important; */
     
 }
 
@@ -17,11 +17,33 @@ header .container-fluid p{
 .cards{
     color: white;
 }
-.gowen{
-    background-color: #C50227;
+
+.cards .card-footer{
+    color: black;
 }
 
-.science, .art{
+.row
+
+.cards .card{
+    width: 400px !important;
+   
+}
+.gowen{
+    background-color: #C50227;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+}
+
+.science{
+    background-color: #980A25;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.art{
     background-color:  #78091E;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
