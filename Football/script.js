@@ -1,23 +1,4 @@
-// myFunction = () => {
-//     var box = document.getElementById('myMain');
-//     if (!box.style.display || box.style.display == "none") {
-//         box.style.display = "block";
-//     }
-//     else {
-//         box.style.display = "none";
-//     }
-// }
-
-// // let array = 
-
-// fetch('https://jsonmock.hackerrank.com/api/football_competitions?year=2011')
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-
-
-async function getUsers(year) {
-    // let year = document.querySelector('.2011')
-    // year = year.innerHTML
+getUsers = async (year) => {
     let url = `https://jsonmock.hackerrank.com/api/football_competitions?year=${year}`;
     try {
         let res = await fetch(url);
@@ -28,7 +9,7 @@ async function getUsers(year) {
     
 }
 
-async function myFunction(year) {
+myFunction = async (year) => {
     console.log(year)
     let users = await getUsers(year);
     if (users.total == 0){
@@ -41,9 +22,9 @@ async function myFunction(year) {
     
     let html = `<p class = "total_match">${'Total Matches: ' + users.total}</p>`
     users.data.forEach((user)=> {
-        let htmlSegment = `<div class="user">
-                                <p class = "match">${"Match " + user.name + ' won by ' + user.winner }</p>
-                        </div>`;
+        let htmlSegment = `<ul class="user" data-test-id="match-list">
+                                <li class = "match">${"Match " + user.name + ' won by ' + user.winner }</li>
+                        </ul>`;
 
         html += htmlSegment;
     });
