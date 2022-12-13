@@ -1,0 +1,61 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+nav img{
+    max-width: 30%;
+    height:40px !important;
+}
+.sign-in{
+    background-color: #40196D;
+    border-color: #40196D;
+}  
+.sign-up{
+    background-color: #40196D;
+    border-color: #40196D;
+}  
+
+.header h1{
+    color: #40196D;
+}
+.header .get-the-app-btn{
+    border-radius: 5px;
+}
+.footer h6{
+    color: #40196D;
+}
+.footer-media img{
+    max-width: 7%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px ) {
+     .footer-media img{
+        max-width: 3%;
+        height: auto;
+    }
+ }
+
+@media screen and (min-width: 768px ) {
+    /* .sign-in-sign-up{
+         margin-left: 100px;
+     }  */
+ }
+
+@media screen and (min-width: 1121px ) {
+    .sign-in-sign-up{
+         margin-left: 300px;
+     } 
+ }
+
+ @media screen and (min-width: 1321px ) {
+    .sign-in-sign-up{
+         margin-left: 500px;
+     } 
+ }
+/* .sign-in-sign-up{
+    margin-left: 30px;
+    color: red !important;
+    background-color: red;
+}    */
