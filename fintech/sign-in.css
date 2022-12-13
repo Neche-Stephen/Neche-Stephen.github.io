@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+.sign-up{
+    background-color: #40196D;
+    border-color: #40196D;
+}
+
+nav img{
+    max-width: 30%;
+    height:40px !important;
+}
