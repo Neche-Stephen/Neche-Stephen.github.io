@@ -1,5 +1,16 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+a{
+    text-decoration: none;
+}
+div.row_above_header{
+    background-color: #07294D;
+    color: white;
+}
 header .container-fluid{
-    /* background-color: #07294D !important; */
+    background-color: #07294D !important;
+    margin-top: -7px;
     
 }
 
@@ -12,6 +23,16 @@ header .container-fluid p{
     color: white;
 }
 
+
+
+/* CAROUSEL */
+.carousel-item img{
+    height: 700px;
+}
+
+
+
+
 /* CARDS */
 
 .cards{
@@ -22,10 +43,13 @@ header .container-fluid p{
     color: black;
 }
 
-.row
+.cards{
+    width: 1290px;
+    margin: 0 auto;
+}
 
 .cards .card{
-    width: 400px !important;
+    width: 430px !important;
    
 }
 .gowen{
@@ -47,3 +71,95 @@ header .container-fluid p{
     grid-template-columns: 30% 70%;
 }
 
+
+ /* DWC Virtual Tour */
+.april-newsletter{
+    position: relative;
+    top: -13rem;
+    left: 11rem;
+    color: #DB2A28;
+    font-weight: bold;
+}
+
+/* Apply for Admission */
+
+.apply-admission{
+    background: url('images/1slider.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    opacity: 1;
+}
+
+.container-fluid.apply-admission p{
+    font-size: 1.3rem;
+}
+
+.container-fluid.apply-admission button{
+    background-color: #C50227;
+    color: white;
+    border: #C50227;
+    padding: 0.7rem;
+    font-weight: bold;
+}
+
+/* Quick Links */
+
+.quicklinks{
+    background-color: #BD3750;
+    color: white;
+}
+
+
+
+.envelope{
+    position: relative;
+    left: 10rem;
+    margin-top: 8rem;
+}
+
+.newsletter h5{
+    text-align: center;
+}
+
+.newsletter p{
+    text-align: center;
+}
+
+.newsletter input{
+    display: block;
+    width: 300px;
+    position: relative;
+    left: 5rem;
+}
+
+.newsletter button{
+    background-color: #C50227;
+    color: white;
+    border: #C50227;
+    padding: 0.7rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    position: relative;
+    left: 5rem;
+    width: 18rem;
+}
+.scholarship button{
+    background-color: #C50227;
+    color: white;
+    border: #C50227;
+    padding: 0.7rem;
+    font-weight: bold;
+    width: 15rem;
+}   
+
+/* FOOTER */
+
+footer{
+    background-color: #181818;
+    color: white;
+}
+
+.row1 div{
+    border-right: 1px solid #363636;
+}
