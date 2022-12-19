@@ -1,61 +1,635 @@
+
 body{
-    font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
+    /* width: 1350px;
+    margin: 0 auto; */
 }
 
-nav img{
-    max-width: 30%;
-    height:40px !important;
+.header{
+  margin-top: 120px;
+  /* overflow-x: hidden; */
 }
-.sign-in{
-    background-color: #40196D;
-    border-color: #40196D;
-}  
-.sign-up{
-    background-color: #40196D;
-    border-color: #40196D;
-}  
+/* .header img{
+  width: 1%;
+} */
+.header .header-media{
+  width: 100%;
+  height: 100%;
+}
+#heart {
+  background: linear-gradient(#E9DCC9, transparent);
+  width: 18rem;
+  height: 20rem;
+  /* position: absolute; */
+  left: calc(50% - 11rem); /********* Learn More ************/
+  /* transform: translateX(-50%); */ /********* Learn More ************/
+  /* margin-top: 4rem; */
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+  /* padding-bottom:1.5rem ; */
+  }
 
-.header h1{
-    color: #40196D;
-}
-.header .get-the-app-btn{
-    border-radius: 5px;
-}
-.footer h6{
-    color: #40196D;
-}
-.footer-media img{
-    max-width: 7%;
-    height: auto;
+.about{
+    margin-top: 120px;
+  }
+
+.about-image{
+  /* margin-top: -50px; */
 }
 
-@media screen and (max-width: 768px ) {
-     .footer-media img{
-        max-width: 3%;
-        height: auto;
+.experience{
+  margin-top: 120px;
+}
+
+.experience .timeline{
+    background-color: white;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containex {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+  width: 30%;
+}
+
+/* The circles on the timeline */
+.containex::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 19.5%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Contact Me */
+.contact{
+  margin-top: 120px;
+}
+.contact-media{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contact-media h6, .contact-media p{
+    position: relative;
+    top: -20%;
+    right: 50%; 
+}
+
+.footer{
+  margin-top: 120px;
+  width: 100%;
+}
+
+.footer-img-div{
+  margin-top: -60px;
+}
+/* .footer img{
+  max-width: 27%;
+} */
+
+
+@media screen and (min-width : 1351px) {
+  body{
+    width: 100%;
+  }
+  .header .header-media{
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width : 1200px) {
+    .header .header-media{
+      width: 50%;
+      height: 50%;
     }
- }
+    
+body{
+  overflow-x: hidden;
+  width: 1350px;
+  margin: 0 auto;
+}
+}
 
-@media screen and (min-width: 768px ) {
-    /* .sign-in-sign-up{
-         margin-left: 100px;
-     }  */
- }
+@media screen and (min-width : 992px) and (max-width : 1199px) {
+  .header .header-media{
+    width: 50%;
+    height: 50%;
+  }
 
-@media screen and (min-width: 1121px ) {
-    .sign-in-sign-up{
-         margin-left: 300px;
-     } 
- }
+  .contact-media h6, .contact-media p{
+    position: relative;
+    top: -20%;
+    right: 70%; 
+}
 
- @media screen and (min-width: 1321px ) {
-    .sign-in-sign-up{
-         margin-left: 500px;
-     } 
- }
-/* .sign-in-sign-up{
-    margin-left: 30px;
-    color: red !important;
-    background-color: red;
-}    */
+}
+@media screen and (min-width : 768px) and (max-width : 991px) {
+  .header .header-media{
+    width: 70%;
+    height: 70%;
+  }
+
+  .contact-media h6, .contact-media p{
+    position: relative;
+    top: -20%;
+    right: 70%; 
+}
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containex {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+  width: 40%; /**change**/
+}
+
+/* The circles on the timeline */
+.containex::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 9.5%; /**change**/
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+}
+
+@media screen and (min-width : 576px) and (max-width : 767px) {
+  #heart{
+    width: 12rem;
+    height: 15rem;
+  }
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containex {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+  width: 49%; /**change**/
+}
+
+/* The circles on the timeline */
+.containex::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0; /**change**/
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+}
+
+@media screen and (max-width : 575px) {
+  .header .header-media{
+    width: 60%;
+    height: 60%;
+  }
+
+  .contact-media h6, .contact-media p{
+    position: relative;
+    top: -20%;
+    right: 80%; 
+}
+
+  #heart{
+    width: 100%;
+    height: 100%;
+  }
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containex {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+  width: 49%; /**change**/
+}
+
+/* The circles on the timeline */
+.containex::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0; /**change**/
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+}
+
+@media screen and (max-width : 450px) {
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containex {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+  width: 60%; /**change**/
+}
+
+/* The circles on the timeline */
+.containex::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -12%; /**change**/
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+}
+
+
+@media screen and (max-width : 400px) {
+  .header .header-media{
+    width: 70%;
+    height: 70%;
+  }
+  .contact-media h6, .contact-media p{
+    position: relative;
+    top: -20%;
+    right: 60%; 
+}
+}
+
+
+@media screen and (max-width : 300px) {
+  .header .header-media{
+    width: 100%;
+    height: 100%;
+  }
+}
+
