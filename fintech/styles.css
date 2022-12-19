@@ -20,7 +20,8 @@ nav img{
     color: #40196D;
 }
 .header .get-the-app-btn{
-    border-radius: 5px;
+    background-color: #40196D;
+    border-color: #40196D;
 }
 .footer h6{
     color: #40196D;
