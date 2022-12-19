@@ -87,7 +87,7 @@
         </div>
         <div class="row justify-content-center" >
           <div class="col-auto d-flex mt-5">
-            <a href="/cv.pdf" class="me-5 btn" id="work" style="color: #FF9F55;">Work</a>
+            <a href="/cv.pdf" class="me-5 btn btn-primary" id="work" >Work</a>
             <a href="/cv.pdf" class="btn" id="education">Education</a>
           </div>
         </div>
@@ -243,16 +243,16 @@
         let education = document.getElementById('education');
         work.addEventListener('click', ((e)=>{
             e.preventDefault();
-            work.style.color = '#FF9F55'
+            work.className = 'me-5 btn btn-primary'
+            education.className = 'btn'
             console.log(education.style.color)
-            education.style.color = 'black'
             work_div.style.display = 'block'
             edu_div.style.display = 'none'
         }))
         education.addEventListener('click', ((e)=>{
             e.preventDefault();
-            education.style.color = '#FF9F55'
-            work.style.color = 'black'
+            education.className = 'btn btn-primary'
+            work.className = 'me-5 btn'
             work_div.style.display = 'none'
             edu_div.style.display = 'block'
         }))
