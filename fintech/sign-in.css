@@ -17,3 +17,7 @@ nav img{
     background-color: #40196D;
     border-color: #40196D;
 }
+
+form{
+    overflow-x: hidden;
+}
