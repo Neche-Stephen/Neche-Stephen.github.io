@@ -1,0 +1,53 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+.sign-in{
+    background-color: #40196D;
+    border-color: #40196D;
+}
+
+nav img{
+    max-width: 30%;
+    height:40px !important;
+}
+
+.sign-up-btn{
+    background-color: #40196D;
+    border-color: #40196D;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .nation{
+        /* width: 50%; */
+        width: 23%;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nation{
+        /* width: 50%; */
+        width: 31%;
+    } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .nation{
+        /* width: 50%; */
+        width: 42%;
+    }  
+}
+
+@media screen and (max-width: 575px) {
+    .nation{
+        /* width: 50%; */
+        width: 40%;
+    }  
+}
+
+@media screen and (max-width: 495px) {
+    .row{
+        margin-bottom: 10px !important;
+    }
+}

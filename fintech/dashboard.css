@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
 }
 
-.sign-up{
+.logout{
     background-color: #40196D;
     border-color: #40196D;
 }
@@ -13,7 +13,6 @@ nav img{
     height:40px !important;
 }
 
-.sign-in-btn{
-    background-color: #40196D;
-    border-color: #40196D;
+.dashboard h5{
+    color: #40196D;
 }
