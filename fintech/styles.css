@@ -12,11 +12,27 @@ nav img{
 .sign-in{
     background-color: #40196D;
     border-color: #40196D;
-}  
+    color: white;
+} 
+.sign-in:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.7;
+} 
+
 .sign-up{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
 }  
+
+.sign-up:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.7;
+} 
 
 .header h1{
     color: #40196D;
@@ -24,6 +40,13 @@ nav img{
 .header .get-the-app-btn{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
+}
+.header .get-the-app-btn:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.7;
 }
 .footer h6{
     color: #40196D;

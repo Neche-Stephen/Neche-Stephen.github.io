@@ -1,3 +1,7 @@
+
+*{
+    text-decoration: none !important;
+}
 body{
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
@@ -6,6 +10,14 @@ body{
 .sign-up{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
+}
+
+.sign-up:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.8;
 }
 
 nav img{
@@ -16,8 +28,30 @@ nav img{
 .sign-in-btn{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
+}
+
+.sign-in-btn:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.8;
 }
 
 form{
     overflow-x: hidden;
 }
+
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  form h4{
+    color: #40196D;
+  }
+  label{
+    color: #40196D;
+  }
+
+  

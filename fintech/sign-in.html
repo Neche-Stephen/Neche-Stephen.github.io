@@ -10,52 +10,62 @@
 </head>
 <body>
     <nav class="container-fluid shadow-sm">
-        <div class="row p-2">
+        <div class="row p-2 justify-content-between">
             <div class="col-auto">
                 <a class="" href="index.html"><img src="images/favro.png" class="img-fluid" alt=""></a>
             </div>
-            <div class="offset-lg-8  offset-md-7 offset-sm-6 offset-1 col-auto">
-                <a href="sign-up.html" class="btn btn-primary sign-up">Open an Account</a>
+            <div class="col-auto">
+                <a href="sign-up.html" class="btn sign-up">Open an Account</a>
             </div>
         </div>
 
     </nav>
 
     <!-- FORM -->
-    <form class="container-fluid mt-5" id="form">
+    <form class="container mt-5" id="form">
         <div class="row justify-content-center">
-              <div class="col-sm-8 offset-lg-4">
-              <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                      <h5>Sign In to Ya!</h2>
+              <div class="col-lg-4 col-md-6 col-sm-8 col-8 shadow">
+                  <div class="row">
+                      <div class="col-auto">
+                          <h4><b>Sign In to Ya!</b></h4>
+                      </div>
                   </div>
-              </div>
+                  <div class="row">
+                    <div class="col-auto form-text">
+                      <p>To sign in, please type in the email address linked to your Ya! account.</p>
+                    </div>
+                  </div>
               <div class="row mb-3">
-                <label for="inputEmail3" class="col-4  col-lg-2 col-form-label">Email</label>
-                <div class="col-7 col-sm-auto ">
-                  <input type="email" class="form-control" id="inputEmail3">
+                <label for="inputEmail3" class="col-4 col-form-label"><b>Email</b></label>
+                <div class="col-12">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="example@gmail.com">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputPassword3" class="col-4 col-lg-2 col-form-label">Password</label>
-                <div class="col-7 col-sm-auto">
-                  <input type="password" class="form-control" id="inputPassword3">
+                <label for="inputPassword3" class="col-4"><b>Password</b></label>
+                <div class="col-12">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="......"> 
                 </div>
               </div>          
-              <div class="row mb-3">
-                <div class="col-4 col-sm-auto">
-                  <button type="submit" class="btn btn-primary sign-in-btn">Sign in</button>
+              <div class="row mb-0">
+                <div class="col-sm-4 ">
+                  <button type="submit" class="btn sign-in-btn">Sign in</button>
                 </div>
               </div> 
+              <div class="row">`
+                <div class="col-auto form-text">
+                  <p>If you don't have a Ya! account, open an account <a href="sign-up.html">here</a>  in a few minutes.</p>
+                </div>
+              </div>
             </div>
         </div>   
        
-      </form>
+    </form>
       <script>
         let form = document.getElementById('form')
         form.addEventListener('submit', ((e)=>{
           e.preventDefault();
-          location.replace('sign-up.html')
+          location.replace('dashboard.html')
         }))
       </script>
     <script type="text/javascript" href="js/bootstrap.min.js">

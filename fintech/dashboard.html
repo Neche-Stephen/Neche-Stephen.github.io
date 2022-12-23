@@ -10,12 +10,12 @@
 </head>
 <body>
     <nav class="container-fluid shadow-sm">
-        <div class="row p-2">
+        <div class="row p-2 justify-content-between">
             <div class="col-auto">
                 <a class="" href="index.html"><img src="images/favro.png" class="img-fluid" alt=""></a>
             </div>
-            <div class="offset-lg-8  offset-md-7 offset-sm-6 offset-1 col-auto">
-                <a href="sign-in.html" class="btn btn-primary logout">Logout</a>
+            <div class="col-auto">
+                <a href="index.html" class="btn logout">Logout</a>
             </div>
         </div>
 
@@ -23,15 +23,58 @@
 
     <!-- Dashboard -->
 
-    <div class="container-fluid dashboard">
+    <div class="container dashboard">
         <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="card" >
+            <div class="col-md-4 ">
+                <div class="card shadow" >
                     <div class="card-body">
-                      <h5 class="card-title">Welcome to your Dashboard</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">lorem ipsum</h6>
-                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae possimus similique quis!</p>
+                      <h5 class="card-title"><b>Ubawike, Chinecherem</b></h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Chinecherem</h6> -->
                     </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Account Balance: <span class="badge bg-secondary">0.00</span></li>
+                        <li class="list-group-item">
+                           <a href="" class="dashboard-link"><img src="images/add.png" class="dashboard-img" alt=""> Add Money </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="" class="dashboard-link"><img src="images/pay.png" class="dashboard-img" alt=""> Send Money</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card shadow" >
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Savings</b></h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Chinecherem</h6> -->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Total Savings: <span class="badge bg-secondary">0.00</span></li>
+                        <li class="list-group-item">
+                           <a href="" class="dashboard-link"><img src="images/add.png" class="dashboard-img" alt=""> Save</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="" class="dashboard-link"><img src="images/pay.png" class="dashboard-img" alt=""> Spend</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="card shadow" >
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Investment</b></h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Chinecherem</h6> -->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Total investment: <span class="badge bg-secondary">0.00</span></li>
+                        <li class="list-group-item">
+                           <a href="" class="dashboard-link"><img src="images/add.png" class="dashboard-img" alt=""> Invest</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="" class="dashboard-link"><img src="images/pay.png" class="dashboard-img" alt=""> Withdraw</a>
+                        </li>
+                    </ul>
                   </div>
             </div>
         </div>

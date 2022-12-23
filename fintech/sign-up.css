@@ -3,51 +3,95 @@ body{
     overflow-x: hidden;
 }
 
-.sign-in{
+.sign-in-btn{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
 }
 
+
+.sign-in-btn:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.8;
+}
 nav img{
     max-width: 30%;
     height:40px !important;
 }
 
-.sign-up-btn{
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .nation{
+    position: relative;
+    left: 10%;
+  }
+
+  form h4{
+    color: #40196D;
+  }
+  
+  label{
+    color: #40196D;
+  }
+
+.get-started-btn{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
 }
 
+.get-started-btn:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.8;
+}
+
+  
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .nation{
+        width: 78%;
+    } 
+}
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .nation{
         /* width: 50%; */
-        width: 23%;
+        width: 78%;
     } 
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .nation{
         /* width: 50%; */
-        width: 31%;
+        width: 78%;
     } 
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .nation{
         /* width: 50%; */
-        width: 42%;
+        width: 78%;
     }  
 }
 
 @media screen and (max-width: 575px) {
     .nation{
         /* width: 50%; */
-        width: 40%;
+        width: 78%;
     }  
 }
 
-@media screen and (max-width: 495px) {
+/* @media screen and (max-width: 495px) {
     .row{
         margin-bottom: 10px !important;
     }
-}
+} */

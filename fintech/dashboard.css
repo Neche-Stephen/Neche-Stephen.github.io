@@ -6,6 +6,14 @@ body{
 .logout{
     background-color: #40196D;
     border-color: #40196D;
+    color: white;
+}
+
+.logout:hover{
+    background-color: #40196D;
+    border-color: #40196D;
+    color: white;
+    opacity: 0.8;
 }
 
 nav img{
@@ -14,5 +22,13 @@ nav img{
 }
 
 .dashboard h5{
+    color: #40196D;
+}
+
+.dashboard-img{
+    width: 10%;
+}
+.dashboard-link{
+    text-decoration: none;
     color: #40196D;
 }
