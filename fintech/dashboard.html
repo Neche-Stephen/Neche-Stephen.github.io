@@ -25,10 +25,10 @@
 
     <div class="container dashboard">
         <div class="row mt-5">
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
                 <div class="card shadow" >
                     <div class="card-body">
-                      <h5 class="card-title"><b>Ubawike, Chinecherem</b></h5>
+                      <h5 class="card-title"><b id="card-title"></b></h5>
                       <!-- <h6 class="card-subtitle mb-2 text-muted">Chinecherem</h6> -->
                     </div>
                     <ul class="list-group list-group-flush">
@@ -42,7 +42,7 @@
                     </ul>
                   </div>
             </div>
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 mb-sm-3">
                 <div class="card shadow" >
                     <div class="card-body">
                       <h5 class="card-title"><b>Savings</b></h5>
@@ -60,7 +60,7 @@
                   </div>
             </div>
 
-            <div class="col-md-4 ">
+            <div class="col-lg-4 col-md-6 ">
                 <div class="card shadow" >
                     <div class="card-body">
                       <h5 class="card-title"><b>Investment</b></h5>
@@ -79,7 +79,12 @@
             </div>
         </div>
     </div>
-     
+     <script>
+        let name = document.getElementById('card-title')
+        let firstName =  sessionStorage.getItem('fname');
+        let lastName =  sessionStorage.getItem('lname');
+        name.innerHTML = `${((firstName == '') || (lastName =='')) ? 'John Doe' : firstName + " " + lastName}`
+     </script>
     <script type="text/javascript" href="js/bootstrap.min.js">
     </script>
     <!-- JavaScript Bundle with Popper -->
