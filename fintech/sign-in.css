@@ -7,16 +7,21 @@ body{
     overflow-x: hidden;
 }
 
+nav{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+
 .sign-up{
-    background-color: #40196D;
-    border-color: #40196D;
-    color: white;
+    background-color: white;
+    border-color: #7b1798;
+    color: #7b1798;
 }
 
 .sign-up:hover{
-    background-color: #40196D;
-    border-color: #40196D;
-    color: white;
+    background-color: white;
+    border-color: #7b1798;
+    color: #7b1798;
     opacity: 0.8;
 }
 
@@ -26,14 +31,14 @@ nav img{
 }
 
 .sign-in-btn{
-    background-color: #40196D;
-    border-color: #40196D;
+    background-color: #7b1798;
+    border-color: #7b1798;
     color: white;
 }
 
 .sign-in-btn:hover{
-    background-color: #40196D;
-    border-color: #40196D;
+    background-color: #7b1798;
+    border-color: #7b1798;
     color: white;
     opacity: 0.8;
 }
@@ -48,10 +53,10 @@ input:focus {
   }
 
   form h4{
-    color: #40196D;
+    color: #7b1798;
   }
   label{
-    color: #40196D;
+    color: #7b1798;
   }
 
   

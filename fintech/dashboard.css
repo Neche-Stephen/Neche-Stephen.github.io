@@ -1,34 +1,130 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.logout{
-    background-color: #40196D;
-    border-color: #40196D;
-    color: white;
-}
-
-.logout:hover{
-    background-color: #40196D;
-    border-color: #40196D;
-    color: white;
-    opacity: 0.8;
-}
-
-nav img{
-    max-width: 30%;
-    height:40px !important;
-}
-
-.dashboard h5{
-    color: #40196D;
-}
-
-.dashboard-img{
+.offcanvas-body img{
     width: 10%;
 }
-.dashboard-link{
-    text-decoration: none;
-    color: #40196D;
+.offcanvas-body #demo-img{
+    width: 100%;
+}
+.offcanvas-body .fa{
+    color: #7b1798;
+}
+.main{
+    background-color: rgb(240, 240, 240 );
+}
+.row-1 .fa-user-md{
+   font-size: 56px;
+   color: #7b1798;
+}
+.row-2, .row-3{
+    color: white;
+}
+
+.row-2-cols{
+    background-color: #7b1798;
+    border-radius: 5px;
+}
+
+.row-3-cols{
+    background-color: #7b1798;
+    width: 99px;
+    border-radius: 5px;
+}
+
+.row-3-cols img{
+    width: 50%;
+}
+
+/* ROW-4  */
+    .row-4-col-2-img img{
+        width: 20%;
+    }
+
+
+/* Transactions */
+.transaction-details img{
+    width: 150%;
+}
+
+.transaction-details button{
+    background-color: #7b1798;
+    color: white;
+    border-color: #7b1798;
+    border-radius: 5px;
+}
+
+.small-letter{
+    font-size: smaller;
+    color: gray;
+}
+
+.transaction-details-hr{
+    width: 87%;
+   position: relative;
+   top: -12px;
+   left: 53.5px;
+   opacity: 0.1;
+}
+/* Transfers */
+.transfers .fa-exchange{
+    font-size: 26px;
+}
+.transfers-hr{
+    width: 97%;
+   position: relative;
+   /* top: -12px; */
+   left: 19.5px;
+   opacity: 0.1;
+}
+.transfer-img-others img{
+    width: 10%;
+}
+
+.transfers button{
+    background-color: #7b1798;
+    color: white;
+    border-color: #7b1798;
+    border-radius: 5px;
+}
+
+
+    /* Remote Deposits */
+.remote-deposits button{
+    background-color: #7b1798;
+    color: white;
+    border-color: #7b1798;
+    border-radius: 5px;
+}
+/* Deposits */
+.deposits .fa-check{
+   font-size: 20px;
+}
+
+/* Messages */
+
+.messages img{
+    width: 140%;
+}
+.messages .fa{
+    font-size: 20px;
+}
+
+.messages button{
+    background-color: #7b1798;
+    color: white;
+    border-color: #7b1798;
+    border-radius: 5px;
+}
+
+/* Payments */
+.payments .fa-clock-o {
+    font-size: 20px;
+}
+
+.payments hr{
+    width: 95%;
+   position: relative;
+   left: 27.5px;
+   opacity: 0.1;
 }
