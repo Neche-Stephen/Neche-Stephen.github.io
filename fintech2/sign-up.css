@@ -1,0 +1,102 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+/* 7b1798  40196D */
+
+nav{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.sign-in-btn{
+    background-color: white;
+    border-color: #7b1798;
+    color: #7b1798;
+}
+
+
+.sign-in-btn:hover{
+    background-color: white;
+    border-color: #7b1798;
+    color: #7b1798;
+    opacity: 0.8;
+}
+nav img{
+    max-width: 30%;
+    height:40px !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .nation{
+    position: relative;
+    left: 10%;
+  }
+
+  form h4{
+    color: #7b1798;
+  }
+  
+  label{
+    color: #7b1798;
+  }
+
+.get-started-btn{
+    background-color: #7b1798;
+    border-color: #7b1798;
+    color: white;
+}
+
+.get-started-btn:hover{
+    background-color: #7b1798;
+    border-color: #7b1798;
+    color: white;
+    opacity: 0.8;
+}
+
+  
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .nation{
+        width: 78%;
+    } 
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .nation{
+        /* width: 50%; */
+        width: 78%;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nation{
+        /* width: 50%; */
+        width: 78%;
+    } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .nation{
+        /* width: 50%; */
+        width: 78%;
+    }  
+}
+
+@media screen and (max-width: 575px) {
+    .nation{
+        /* width: 50%; */
+        width: 78%;
+    }  
+}
+
+/* @media screen and (max-width: 495px) {
+    .row{
+        margin-bottom: 10px !important;
+    }
+} */

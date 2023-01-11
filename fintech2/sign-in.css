@@ -1,0 +1,69 @@
+:root {
+    --brand: #ff4d29;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+*{
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+nav{
+    background-image: linear-gradient(to right, #ff4d29, #ff4d29);
+}
+
+
+.sign-up{
+    background-color: white;
+    border-color: var(--brand);
+    color: var(--brand);
+}
+
+.sign-up:hover{
+    background-color: white;
+    border-color: var(--brand);
+    color: var(--brand);
+    opacity: 0.8;
+}
+
+nav img{
+    max-width: 30%;
+    height:40px !important;
+}
+
+.sign-in-btn{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: white;
+}
+
+.sign-in-btn:hover{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: white;
+    opacity: 0.8;
+}
+
+form{
+    overflow-x: hidden;
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  form h4{
+    color: var(--brand);
+  }
+  label{
+    color: var(--brand);
+  }
+
+  

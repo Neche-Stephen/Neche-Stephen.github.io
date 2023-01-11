@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="sign-up.css">
+    </head>
+<body>
+
+    <nav class="container-fluid shadow-sm">
+        <div class="row p-2 justify-content-between">
+            <div class="col-auto">
+                <a class="" href="index.html"><img src="images/demo-logo.png" class="img-fluid" alt=""></a>
+            </div>
+            <div class="col-auto">
+                <a href="sign-in.html" class="btn sign-in-btn">Login to account</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <form class="container mt-5" id="form">
+        <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-8 col-8 shadow">
+                <div class="row mt-5">
+                    <div class="col-auto">
+                        <h4><b>Create your Ya! account</b></h4>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-auto form-text">
+                    <p>To create an acccount, please fill in correct details in the form.</p>
+                </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="fname" class="col-4 col-form-label"><b>First Name</b></label>
+                    <div class="col-12">
+                    <input type="text" class="form-control" id="fname" placeholder="John">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="lname" class="col-4 col-form-label"><b>Last Name</b></label>
+                    <div class="col-12">
+                    <input type="text" class="form-control" id="lname" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-4 col-form-label"><b>Email</b></label>
+                    <div class="col-12">
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="password" class="col-4"><b>Password</b></label>
+                    <div class="col-12">
+                    <input type="password" class="form-control" id="password" placeholder="......"> 
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <label for="confirm-password" class="col-sm-6"><b> Confirm Password</b></label>
+                    <div class="col-12">
+                    <input type="password" class="form-control" id="confirm-password" placeholder="......"> 
+                    </div>
+                </div>         
+                <div class="row mb-0">
+                    <div class="col-sm-6 ">
+                    <button type="submit" class="btn get-started-btn">Get Started</button>
+                    </div>
+                </div> 
+                <div class="row">`
+                    <div class="col-auto form-text">
+                    <p>By clicking get started, I acknowledge that I have read and do hereby accept the terms and conditions in the Flutterwave's Terms of Use, Merchant Agreement and Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+       
+    </form>
+
+    
+    <script>
+        let form = document.getElementById('form')
+        form.addEventListener('submit', ((e)=>{
+          e.preventDefault();
+          let email = document.getElementById('email').value;
+          let password = document.getElementById('password').value;
+          let confirm_password = document.getElementById('confirm-password').value;
+          let fname = document.getElementById('fname').value;
+          let lname = document.getElementById('lname').value;
+          sessionStorage.setItem('email', email);
+          sessionStorage.setItem('password', password);
+          sessionStorage.setItem('fname', fname);
+          sessionStorage.setItem('lname', lname);
+          console.log(sessionStorage)
+          location.replace('dashboard.html')
+        }))
+      </script>
+    <script type="text/javascript" href="js/bootstrap.min.js">
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+ <!-- <div class="row g-3 justify-content-center mb-5">
+            <div class="col-auto">
+                <select class="form-select" aria-label="Select Gender">
+                    <option selected>---Select Gender---</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="col-auto"></div>
+                
+        </div> -->
