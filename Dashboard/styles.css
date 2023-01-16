@@ -113,3 +113,16 @@ aside .aside-img{
         height: 100vh;
     }
 }
+
+@media screen and (max-width:575px) {
+    .offcanvas-lg.offcanvas-start{
+       width: 300px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .offcanvas-lg.offcanvas-start{
+       width: 200px;
+    }
+}
+
