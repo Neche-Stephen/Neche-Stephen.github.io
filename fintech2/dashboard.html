@@ -4,469 +4,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/2f89d12af1.js" crossorigin="anonymous"></script>
+    <title>Ya!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Dashboard -->
-        <div class="container-fluid">
-                <div class="row">
-                        <div class="col-2 g-0 ps-4 ">
-                            <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
-                            <div class="offcanvas-lg offcanvas-start row" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-                                    <div class="offcanvas-body row">
-                                        <!-- <h1>Ya!</h1><hr class="g-0"> -->
-                                        <p><a class="" href="index.html"><img id="demo-img" class="p-4" src="images/demo-logo.png" alt="" style="background-color: #7b1798;width: 100%;"></a></p>
-                                        <p class="mb-3"><i class="fa fa-tachometer me-2" aria-hidden="true"></i> Dashboard</p>
-                                        <p class="mb-3"><i class="fa fa-address-card me-2" aria-hidden="true"></i> Accounts</p>
-                                        <p class="mb-3"><i class="fa fa-exchange me-2" aria-hidden="true"></i> Transfers</p>
-                                        <p class="mb-3"><i class="fa fa-university me-2" aria-hidden="true"></i> Deposits Check</p>
-                                        <p class="mb-3"><i class="fa fa-money me-2" aria-hidden="true"></i> Payments</p>
-                                        <p class="mb-3"><i class="fa fa-envelope me-2" aria-hidden="true"></i> Messages</p>
-                                        <p class=""><i class="fa fa-question-circle me-2" aria-hidden="true"></i> Support</p>
-                                    </div>
-                            </div>
-
-                        </div>
-                        <div class="col-10 main px-5">
-                            <div class="row row-1 mt-5  justify-content-between">
-                                <div class="col-11">
-                                        <h2>Hi, Micheal</h2>
-                                        <p>Accounts</p>
-                                </div>
-                                <div class="col-1">
-                                    <i class="fa fa-user-md" aria-hidden="true"></i>
-                                    <i class="fa fa-ellipsis-h ms-3" aria-hidden="true"></i>
-                                </div> 
-                            </div>
-                            <div class="row row-2 mb-3">
-                                <div class="col-4">
-                                    <div class="row-2-cols p-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-auto">
-                                                <p class="lh-1">Account Balance</p>
-                                            </div>
-                                            <div class="col-auto">
-                                                <p class="lh-1">₦10,000</p>
-                                                <p class="lh-1 ms-3" style="font-size: 11px;">Available</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="row-2-cols p-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-auto">
-                                                <p class="lh-1">Savings</p>
-                                            </div>
-                                            <div class="col-auto">
-                                                <p class="lh-1">₦13,000</p>
-                                                <p class="lh-1 ms-1" style="font-size: 11px;">Available</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="row-2-cols p-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-auto">
-                                                <p class="lh-1">Loan</p>
-                                            </div>
-                                            <div class="col-auto">
-                                                <p class="lh-1">₦1,000</p>
-                                                <p class="lh-1 ms-1" style="font-size: 11px;">Available</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-3 mb-3">
-                                <div class="col-1 me-3">
-                                    <div class="row-3-cols text-center py-3">
-                                        <i class="fa fa-exchange me-2" aria-hidden="true"></i><br>
-                                        <small>Transfer</small>
-                                    </div>
-                                </div>
-                                <div class="col-1 me-3">
-                                    <div class="row-3-cols text-center py-3">
-                                        <i class="fa fa-university me-2" aria-hidden="true"></i><br>
-                                        <small>Deposit</small>
-                                    </div>
-                                </div>
-                                <div class="col-1 me-3">
-                                    <div class="row-3-cols text-center py-3">
-                                        <i class="fa fa-money me-2" aria-hidden="true"></i><br>
-                                        <small>Pay a bill</small>
-                                    </div>
-                                </div>
-                                <div class="col-1 me-3">
-                                    <div class="row-3-cols text-center py-3">
-                                        <i class="fa fa-user" aria-hidden="true"></i><br>
-                                        <small class="" style="font-size: 14px;">Pay a person</small>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="row-3-cols text-center py-3">
-                                        <i class="fa fa-comments-o" aria-hidden="true"></i><br>
-                                        <small>Message</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-4 mb-5">
-                                <div class="col-6">
-                                    <!-- Transactions -->
-                                    <div class="row mb-5">
-                                            <div class="col-12">
-                                                <div class="transaction-details shadow py-3" style="height: 550px;">
-                                                    <div class="row mb-4">
-                                                        <div class="offset-1 col-4">
-                                                            <p></p><b>Transactions</b>
-                                                        </div>
-                                                        <div class="offset-4 col-2">
-                                                            <i class="fa fa-search mt-3" aria-hidden="true"></i>
-                                                            <i class="fa fa-ellipsis-h mt-3 ms-4" aria-hidden="true"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                        <hr class="transaction-details-hr">
-                                                    </div>
-                                                    <div class="row" style="position: relative; top: -17px;">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                        <hr class="transaction-details-hr">
-                                                    </div>
-                                                    <div class="row" style="position: relative; top: -27px;">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                        <hr class="transaction-details-hr">
-                                                    </div>
-                                                    <div class="row" style="position: relative; top: -37px;">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                        <hr class="transaction-details-hr">
-                                                    </div>
-                                                    <div class="row" style="position: relative; top: -47px;">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                        <hr class="transaction-details-hr">
-                                                    </div>
-                                                    <div class="row" style="position: relative; top: -57px;">
-                                                        <div class="offset-1 me-3 col-4">
-                                                            <p><b>CINEMA TOWN</b></p>
-                                                            <small class="small-letter" style="position: relative; top: -20px;">Nov 25, Checking</small>
-                                                        </div>
-                                                        <div class="offset-4  col-1">
-                                                            <small>₦7,500</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="offset-9 col-auto" style="position: relative; top: -67px">
-                                                            <button class="">See more</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <!-- Transfers -->
-                                    <div class="row mb-5">
-                                        <div class="col-12">
-                                            <div class="transfers shadow p-3">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <p><b>Transfers</b></p>
-                                                    </div>
-                                                    <div class="col-2 offset-6" >
-                                                        <i class="fa fa-ellipsis-h mt-3 ms-4" aria-hidden="true" style="position: relative; top: -8px;"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 mb-2 transfer-img-others">
-                                                        <i class="fa fa-exchange" aria-hidden="true"></i>
-                                                        <p style="display: inline;" class="ms-3">Make a transfer</p>
-                                                    </div>
-                                                    <div class="col-12">
-                                                       <small class="small-letter">Scheduled transfers</small>
-                                                    </div>
-                                                    <hr class="transfers-hr">
-                                                    <div class="col-12">
-                                                        <p>2000 to CBT ACCT 0001</p>
-                                                        <small class="small-letter" style="position: relative; top: -15px;">On June 1, from CBT ACCT 0002</small>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-end">
-                                                    <div class="col-auto" style="position: relative; right: 6px;">
-                                                        <button class="">See more</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Deposits Checks -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="deposits shadow py-3">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-4 ms-4">
-                                                        <p><b>Deposits checks</b></p>
-                                                    </div>
-                                                    <div class="col-2 me-3" style="position: relative; top: -4px;">
-                                                        <i class="fa fa-ellipsis-h mt-3 ms-4" aria-hidden="true" style="position: relative; top: -8px;"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="row" >
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-check mt-1" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Main Checking</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Accepted</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <p>₦10</p>
-                                                        <small style="position: relative; top: -22px;" class="small-letter">8hr ago</small>
-                                                    </div>
-                                                    <!-- <hr class="payments-hr"> -->
-                                                </div>
-                                                <div class="row" >
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>joan</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">pending</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <p>₦10</p>
-                                                        <small style="position: relative; top: -22px;" class="small-letter">May 15</small>
-                                                    </div>
-                                                    <!-- <hr class="payments-hr"> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row mb-5">
-                                        <div class="col-12">
-                                           <div class="shadow p-2">
-                                                <div class="row justify-content-center mb-3">
-                                                    <div class="col-4">
-                                                        <img class="p-3" style="background-color: #7b1798; width: 100%;" src="images/demo-logo.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="offset-2 col-3 row-4-col-2-img">
-                                                        <i class="fa fa-phone" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 2px;">Call</small>
-                                                    </div>
-                                                    <div class="col-3 row-4-col-2-img">
-                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 15px;">Message</small>
-                                                    </div>
-                                                    <div class="col-3 row-4-col-2-img">
-                                                        <i class="fa fa-info-circle" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 2px;">Info</small>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                    <!-- Remote Deposits -->
-                                    <div class="row mb-5">
-                                        <div class="col-12">
-                                            <div class="shadow remote-deposits p-3">
-                                                <div class="row">
-                                                    <div class="col-auto">
-                                                        <p><b>Remote Deposits</b></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <button><small><i class="fa fa-clock-o" aria-hidden="true"></i> 0 Processing</small></button>
-                                                        <button style="background-color: black; border-color: black;"><small>9 Accepted</small></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Messages -->
-                                    <div class="row mb-5">
-                                        <div class="col-12">
-                                            <div class="messages shadow">
-                                                <div class="row mb-4 justify-content-between">
-                                                    <div class="ms-4 col-4">
-                                                        <p></p><b>Messages</b>
-                                                    </div>
-                                                    <div class="col-2 mt-3 me-4" >
-                                                        <i class="fa fa-commenting-o me-3" aria-hidden="true"></i>
-                                                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                                    </div>
-                                                    <!-- <div class="col-1 mt-3">
-                                                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                                    </div> -->
-                                                </div>
-                                                <div class="row">
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Holiday Hours</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Our branches will be closed on thursday, we extend...</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <small class="small-letter">8hr ago</small>
-                                                    </div>
-                                                    <hr class="transaction-details-hr">
-                                                </div>
-                                                <div class="row" style="position: relative; top: -17px;">
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Holiday Hours</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Our branches will be closed on thursday, we extend...</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <small class="small-letter">8hr ago</small>
-                                                    </div>
-                                                    <hr class="transaction-details-hr">
-                                                </div>
-                                                <div class="row" style="position: relative; top: -27px;">
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Holiday Hours</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Our branches will be closed on thursday, we extend...</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <small class="small-letter">8hr ago</small>
-                                                    </div>
-                                                    <hr class="transaction-details-hr">
-                                                </div>
-                                                <div class="row" style="position: relative; top: -37px;">
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Holiday Hours</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Our branches will be closed on thursday, we extend...</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <small class="small-letter">8hr ago</small>
-                                                    </div>
-                                                </div>
-                                                <div class="row" style="position: relative; top: -27px;">
-                                                    <div class="col-6 ms-4">
-                                                        <button>Start a Conversation</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Payments -->
-                                    <div class="row row-4">
-                                        <div class="col-12">
-                                            <div class="shadow payments py-3">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-4 ms-4">
-                                                        <p><b>Payments</b></p>
-                                                    </div>
-                                                    <div class="col-2 me-3" style="position: relative; top: -4px;">
-                                                        <i class="fa fa-ellipsis-h mt-3 ms-4" aria-hidden="true" style="position: relative; top: -8px;"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center mb-4">
-                                                    <div class="offset-2 col-3 row-4-col-2-img">
-                                                        <i class="fa fa-credit-card" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 21px;">Pay a bill</small>
-                                                    </div>
-                                                    <div class="col-3 row-4-col-2-img">
-                                                        <i class="fa fa-user-o" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 21px;">Pay a person</small>
-                                                    </div>
-                                                    <div class="col-3 row-4-col-2-img">
-                                                        <i class="fa fa-money me-2" aria-hidden="true"></i><br>
-                                                        <small style="position: relative; right: 21px; font-size: 12.8px;">Manage Payments</small>
-                                                    </div>
-                                                   
-                                                </div>
-                                                <hr>
-                                                <div class="row" >
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>Main Checking</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">Accepted</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <p>₦10</p>
-                                                        <small style="position: relative; top: -22px;" class="small-letter">8hr ago</small>
-                                                    </div>
-                                                    <!-- <hr class="payments-hr"> -->
-                                                </div>
-                                                <!-- <hr> -->
-                                                <div class="row" >
-                                                    <div class="ms-4 col-1">
-                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <p><b>joan</b></p>
-                                                        <small class="small-letter" style="position: relative; top: -20px;">pending</small>
-                                                    </div>
-                                                    <div class="ms-3 col-2">
-                                                        <p>₦10</p>
-                                                        <small style="position: relative; top: -22px;" class="small-letter">May 15</small>
-                                                    </div>
-                                                    <!-- <hr class="payments-hr"> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
+    <nav class="container-fluid shadow">
+        <div class="row">
+            <div class="col-md-3 brand-col p-3 text-center">
+                <a href="" class="navbar-brand">Fintech</a>
+            </div>
+            <div class="col-md-2 col-sm-6 col-8 d-flex align-items-center nav-icon">
+                <i class="fa fa-bars d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-hidden="true"></i>
+                <i class="fa fa-bell me-3 ms-3" aria-hidden="true"><span class="badge bg-secondary rounded-pill">9</span></i>
+                <i class="fa fa-envelope mt-1" aria-hidden="true"><span class="badge bg-secondary rounded-pill message-badge">9</span></i>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-4 ms-auto align-items-center d-flex nav-icon-input justify-content-end justify-content-sm-start">
+                <input type="text" class="form-control nav-input me-3 d-none d-sm-inline" placeholder="Enter Keywords">
+                <img src="images/user1.jpg" alt="image" class="me-3 nav-img">
+            </div>
         </div>
+    </nav>
 
-     <script>
-        let name = document.getElementById('card-title')
-        let firstName =  sessionStorage.getItem('fname');
-        let lastName =  sessionStorage.getItem('lname');
-        name.innerHTML = `${((firstName == '') || (lastName =='')) ? 'John Doe' : firstName + " " + lastName}`
-     </script>
-     
-    <script type="text/javascript" href="js/bootstrap.min.js">
+    <!-- HEADER -->
+
+    <header class="container-fluid">
+        <div class="row">
+            <aside class="col-3 offcanvas-lg offcanvas-start aside" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+               <div class="row aside-first-row">
+                    <div class="col-12  text-center">
+                        <img src="images/user1.jpg" alt="image" class="me-3 aside-img mt-4">
+                        <p class="h5 mt-2 mb-4">Chinecherem Ubawike</p>
+                    </div>
+                    <hr>
+               </div>
+               
+               <div class="row aside-second-row">
+                    <p class="mb-3"><i class="fa fa-tachometer me-2" aria-hidden="true"></i> Dashboard</p><hr>
+                    <p class="mb-3"><i class="fa fa-address-card me-2" aria-hidden="true"></i> Accounts</p><hr>
+                    <p class="mb-3"><i class="fa fa-exchange me-2" aria-hidden="true"></i> Transfers</p><hr>
+                    <p class="mb-3"><i class="fa fa-university me-2" aria-hidden="true"></i> Deposits Check</p><hr>
+                    <p class="mb-3"><i class="fa fa-money me-2" aria-hidden="true"></i> Payments</p><hr>
+                    <p class="mb-3"><i class="fa fa-envelope me-2" aria-hidden="true"></i> Messages</p><hr>
+                    <p class=""><i class="fa fa-question-circle me-2" aria-hidden="true"></i> Support</p><hr>
+               </div>
+            </aside>
+
+            <main class="col-lg-9 bg-light">
+
+                <div class="row">
+                    <div class="col-auto">
+                        <p class="h5 mt-4 mb-4 ms-3">Hi, Chinecherem</p>
+                    </div>
+                </div>
+                <!-- Dashboard widget 1 -->
+                <div class="row gx-0 mb-4">
+                    <div class="col-sm-4 mb-3 mb-sm-0 ">
+                        <div class="card p-2 shadow ms-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="mr-3 rounded-circle main-second-row-icon"><i class="fa fa-user"></i></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="main-second-row-amount">
+                                                <h3 class="mt-0 mb-0 lh-1"><strong class="">₦36,440.00</strong></h3>
+                                                <p class="lh-1"><small class="text-muted"> Balance</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-6">
+                        <div class="card p-2 shadow ms-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="mr-3 rounded-circle main-second-row-icon main-second-row-icon-red"><i class="fa fa-envelope-o"></i></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="main-second-row-amount">
+                                                <h3 class="mt-0 mb-0 lh-1"><strong class="">₦3,000.00</strong></h3>
+                                                <p class="lh-1"><small class="text-muted">Savings</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-6">
+                        <div class="card p-2 shadow ms-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <div class="mr-3 rounded-circle main-second-row-icon"><i class="fa fa-tags"></i></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="main-second-row-amount">
+                                                <h3 class="mt-0 mb-0 lh-1"><strong class="">₦91,000.00</strong></h3>
+                                                <p class="lh-1"><small class="text-muted">Loans</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dashboard widget 2 -->
+                <div class="row gx-2 mb-4">
+                    <div class="col-sm-3 col-6 mb-3 mb-sm-0">
+                        <div class="card card-widget-2 ms-3" style="background-color: #28A745;">
+                            <div class="card-body">
+                                <div class="main-third-row-icon d-flex justify-content-center">
+                                    <i class="fa fa-exchange"></i>
+                                </div>
+                                <p class='h6 mt-2'>Transfer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6 mb-3 mb-sm-0">
+                        <div class="card card-widget-2 ms-3" style="background-color: #DC3545;">
+                            <div class="card-body">
+                                <div class="main-third-row-icon d-flex justify-content-center">
+                                    <i class="fa fa-university"></i>
+                                </div>
+                                <p class='h6 mt-2'>Deposit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="card card-widget-2 ms-3" style="background-color: #007BFF;">
+                            <div class="card-body">
+                                <div class="main-third-row-icon d-flex justify-content-center">
+                                    <i class="fa fa-money"></i>
+                                </div>
+                                <p class='h6 mt-2'>Pay a Bill</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="card card-widget-2 ms-3" style="background-color: #FFC107;">
+                            <div class="card-body">
+                                <div class="main-third-row-icon d-flex justify-content-center">
+                                    <i class="fa fa-weixin"></i>
+                                </div>
+                                <p class='h6 mt-2'>Message</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Dashboard widget 3 -->
+                 <div class="row mb-4">
+                    <!-- Recent Transactions -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted">Recent Transactions</h5> 
+                            </div>
+                            <ul class="list-group list-group-flush transactions-ul">
+                                
+                                <li class="list-group-item">
+                                    <div class="row justify-content-between mb-3">
+                                        <small class="card-text text-muted d-inline-block mb-3">22 Dec 2022</small> 
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>UBAWIKE CHINECHEREM</b></p>
+                                            <small class="text-muted">07:41 AM</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-success"><b>+₦500.00</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between mb-4">
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>ROYAL VALLEY HOTELS</b></p>
+                                            <small class="text-muted">09:01 PM</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-danger"><b>-₦9,800.00</b></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-between mb-3">
+                                        <small class="card-text text-muted d-inline-block mb-3">02 Dec 2022</small> 
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>PETER AND SONS</b></p>
+                                            <small class="text-muted">02:53 PM</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-success"><b>+₦80,000.00</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>ANTHONIA IGWE</b></p>
+                                            <small class="text-muted">08:41 AM</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-danger"><b>₦5,300.00</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-secondary">See more <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    </div>
+                                </li>
+
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- Messages -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted">Messages</h5> 
+                            </div>
+                            <ul class="list-group list-group-flush transactions-ul">
+                                
+                                <li class="list-group-item">
+                                    <div class="row justify-content-between mb-3">
+                                        <small class="card-text text-muted d-inline-block mb-3">22 Dec 2022</small> 
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>Holiday Hours</b></p>
+                                            <small class="text-muted">Our branches will be closed...</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-muted"><b>06:37 PM</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between mb-4">
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>Account Balance</b></p>
+                                            <small class="text-muted">Our branches will be closed...</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-muted"><b>06:37 PM</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <small class="card-text text-muted d-inline-block mb-3">17 Dec 2022</small> 
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>Account Balance</b></p>
+                                            <small class="text-muted">Our branches will be closed...</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-muted"><b>06:37 PM</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between mb-3">
+                                        <div class="col-auto">
+                                            <p class="h6 mt-0 mb-0"><b>Notification</b></p>
+                                            <small class="text-muted">Our branches will be closed...</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <p class="text-muted"><b>06:37 PM</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                    <a href="" class="btn btn-secondary">See more <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </main>
+        </div>
+    </header>
+
+    <script type="text/javascript" href="js/bootstrap.bundle.min.js">
     </script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
