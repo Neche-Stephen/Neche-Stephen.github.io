@@ -297,6 +297,55 @@ nav .nav-link{
     }    
 }
 
+
+@media screen and (max-width:500px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -80px;
+        left: 170px;
+    }    
+}
+
+@media screen and (max-width:430px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -80px;
+        left: 140px;
+    }    
+}
+
+
+@media screen and (max-width:400px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -60px;
+        left: 120px;
+    }    
+}
+
+@media screen and (max-width:350px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -50px;
+        left: 100px;
+    }    
+}
 footer .social-icons a{
     width: 28px;
     height: 28px;
