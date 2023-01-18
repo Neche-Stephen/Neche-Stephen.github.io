@@ -1,0 +1,328 @@
+*{
+    text-decoration: none;
+}
+:root {
+    --brand-color: #068981;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Helpers */
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 500;
+}
+
+
+/* NAV BAR */
+
+nav .navbar-brand{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--brand-color);
+}
+
+nav .nav-link{
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand-color);
+}
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center; /* Personal Comment - Learn more about this */
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color: var(--brand-color) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--brand-color) !important;
+}
+
+.slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide1 {
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg); /* Personal Comment - Learn more about this */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.slide2 {
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/zhuo-cheng-you-Eet5MP9K67c-unsplash.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.slide .display-3 {
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.btn-brand {
+    border-color: var(--brand-color);
+    background-color: var(--brand-color);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-color);
+    opacity: 0.7;
+    color: #fff !important;
+}
+
+
+/* About us */
+
+.about-us{
+    margin-top: 150px ;
+}
+
+.about-us h2{
+    color: var(--brand-color);
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    font-size: 18px;
+}
+
+.about-us .about-us-img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(36 39 37 / 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and ( min-width:768px) {
+    iframe{
+        width:420px;
+        height:315px
+    }   
+}
+/* Menu */
+
+.menu{
+    margin-top: 150px ;
+}
+
+.menu h2{
+    color: var(--brand-color);
+    text-transform: uppercase;
+    display: inline-block;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    padding: 3px 20px;
+    border-radius: 60px;
+    font-size: 18px;
+}
+
+
+.menu .card{
+    border: none;
+}
+
+
+#reviews {
+
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.review {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 15px;
+    max-width: 768px;
+    margin: auto;
+}
+
+.review .bxs-quote-alt-left {
+    font-size: 120px;
+    position: absolute;
+    opacity: 0.1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.review img {
+    width: 80px !important;
+    height: 80px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.review h5 {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.review h3 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.review small {
+    color: var(--brand);
+}
+
+.review .stars {
+    color: var(--brand);
+}
+
+
+/* FOOTER */
+
+@media screen and (min-width:1400px) {
+    footer .social-icons{
+        position: relative;
+        bottom: 80px;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -40px;
+        left: 80px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+    footer .social-icons{
+        position: relative;
+        bottom: 80px;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -40px;
+        left: 80px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    footer .social-icons{
+        position: relative;
+        bottom: 80px;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -30px;
+        left: 60px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+    footer .social-icons{
+        position: relative;
+        /* left: 90px; */
+        margin-left: 120px;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -80px;
+        left: 190px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:767px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -80px;
+        left: 190px;
+    }   
+}
+@media screen and (max-width:575px) {
+    footer .social-icons{
+        position: relative;
+        bottom: unset;
+    }
+    footer .social-icons a{
+        position: relative;
+        top: -80px;
+        left: 200px;
+    }    
+}
+
+footer .social-icons a{
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--brand-color);
+}
+
+footer a{
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+    transition: all 0.4s ease;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: var(--brand-color);
+    font-weight: 550;
+    opacity: 0.8;
+}
+
